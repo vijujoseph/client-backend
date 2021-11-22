@@ -118,7 +118,7 @@ insert into schedule values (900, now(), now(), true);
 
 CREATE TABLE TRIPS_IN_SCHEDULE (
   id bigint(20) NOT NULL AUTO_INCREMENT,
-  schedule_id bigint(20) NOT NULL, 
+  schedule_id bigint(20) NOT NULL,
   trip_id bigint(20) NOT NULL,
   PRIMARY KEY (id),
   foreign key (trip_id) references TRIP_INVENTORY(trip_id),
